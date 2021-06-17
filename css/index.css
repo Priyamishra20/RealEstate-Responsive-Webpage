@@ -106,7 +106,7 @@ header{display:inline-block;width:100%;background:#07333c;}
 /* form area start*/
 .home-search{    position: relative;display:inline-block;width:100%;}
 .container{width:1300px;margin:0 auto;}
-.formheading{    position: absolute; bottom:-48.6%;    left: 0;    right: 0;display:inline-block;text-align:center;width:100%;}
+.formheading{    position: absolute; bottom:-6.6%;    left: 0;    right: 0;display:inline-block;text-align:center;width:100%;}
 .formheading h2{background:#07333c;padding:10px 45px;color:#fff;font-size:36px;line-height:42px;font-weight:400;display:inline-block;box-shadow:-1px -1px 2px #000;}
 .form-field{display:inline-block;width:100%;background:rgba(44, 84, 109, 0.2);padding:30px}
 .firstformfield{float:left;width:31%;    margin-bottom: 35px;}
@@ -235,7 +235,7 @@ footer{display:inline-block;width:100%;    margin-top: 65px;}
 	.firstformfield {    float: left;    width: 28%;}
 	.prev {    left: 16%;}
 	.next {    right: 16%;}
-	.formheading{bottom:-80%;}
+	.formheading{bottom:-24.5%;}
 	
 	.firstpeoperty {    float: left;    width: 32%;}
 	.properties {    margin: 30px 0 ;}
@@ -254,8 +254,8 @@ footer{display:inline-block;width:100%;    margin-top: 65px;}
 		.prev {padding:0 0 0 45px;    left: 12%;}
 	.next  {padding:0 45px 0 0;    right: 12%;}
 	.bannerheading {    width: 40%;}
-	.formheading h2{margin: 55px 0 0 0;}
-	.formheading {    bottom: -59%;}
+	.formheading h2{margin: 55px 0 0 0;font-size:30px;}
+	.formheading {    bottom: -10.3%;}
 	.bannerheading h1{font-size:70px;line-height:100px;}
 	#buy-rent-sell{font-size:20px;}
 #propertytype{font-size:20px;}
@@ -310,7 +310,7 @@ footer{display:inline-block;width:100%;    margin-top: 65px;}
 #pricefrom{font-size:15px;}
 #priceto{font-size:15px;}
 	.firstpeoperty {    float: left;    width: 32%;}
-	.formheading {  bottom:-36%;}
+	.formheading {  bottom:5.7%;}
 	.formheading h2 {   padding: 8px 39px; font-size: 26px;line-height: 36px;}
 	.formanchor a {    font-size: 18px;    line-height: 28px;    padding: 6px 16px;}
 	.accommodation i{font-size: 22px;    line-height: 28px;}
@@ -365,7 +365,7 @@ footer{display:inline-block;width:100%;    margin-top: 65px;}
 	.hcontact .hphone{font-size: 16px;}
 	.hcontact {    text-align: center; width: 100%;}
 	.formheading h2{padding: 8px 11px;font-size: 20px;line-height: 32px;}
-	.formheading {    bottom: 30.6%;}
+	.formheading {    bottom: 21.6%;}
 .form-field{    padding: 15px;}
 .firstformfield { width: 100%;}
 .property, .firstformfield{margin:10px 0;}
