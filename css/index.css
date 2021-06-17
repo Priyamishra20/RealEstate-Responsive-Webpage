@@ -106,7 +106,7 @@ header{display:inline-block;width:100%;background:#07333c;}
 /* form area start*/
 .home-search{    position: relative;display:inline-block;width:100%;}
 .container{width:1300px;margin:0 auto;}
-.formheading{    position: absolute; bottom:-70%;    left: 0;    right: 0;display:inline-block;text-align:center;width:100%;}
+.formheading{    position: absolute; bottom:-48.6%;    left: 0;    right: 0;display:inline-block;text-align:center;width:100%;}
 .formheading h2{background:#07333c;padding:10px 45px;color:#fff;font-size:36px;line-height:42px;font-weight:400;display:inline-block;box-shadow:-1px -1px 2px #000;}
 .form-field{display:inline-block;width:100%;background:rgba(44, 84, 109, 0.2);padding:30px}
 .firstformfield{float:left;width:31%;    margin-bottom: 35px;}
