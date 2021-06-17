@@ -1,0 +1,417 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;box-sizing: border-box;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block;box-sizing: border-box;}
+body {	line-height: 1;font-family: 'Raleway', sans-serif;}
+ol, ul {	list-style: none;}
+blockquote, q {	quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}
+table {	border-collapse: collapse;	border-spacing: 0;}
+
+/*header start */
+header{display:inline-block;width:100%;background:#07333c;}
+.box{width:1400px;margin:0 auto;}
+.headerdetails{display:inline-block;width:100%;margin:13px 0;}
+.Hcontact{text-align:left;display:inline-block;width:33%;}
+.Hcontact span{    padding-top: 10px;    display: inline-block;color:#fff;font-size:20px;line-height:24px;font-weight:400;}
+.hlogin{display:inline-block;width:33%;text-align:center;}
+.hlogin  i{color:#fff;font-size:36px;line-height:40px;margin-right:8px;display:inline-block;}
+.hlogin  a{text-decoration:none;color:#fff;font-size:20px;line-height:24px;display:inline-block;}
+.hlogin a:hover{color:#82cbf9;}
+.hcontact{display:inline-block;width:32%;text-align:right;}
+.hcontact .hphone{display:inline-block;color:#fff;font-size:20px;line-height:24px;font-family: 'Roboto', sans-serif;}
+.hcontact  i{display:inline-block;color:#fff;font-size:36px;line-height:40px;margin-right:8px;}
+.heroimage{display:inline-block;width:100%;}
+.heroimage img{width:100%;display:inline-block;}
+/*header end*/
+
+
+/* banner start*/
+.banner{display:inline-block;width:100%;background-image:url(../images/banner.jpg);background-position:center;background-repeat:no-repeat;background-size:cover;min-height:742px;position:relative;}
+/* .banner-image{display:inline-block;width:100%;position:relative;} */
+.menu-list-logo{display:inline-block;width:100%;background:rgba(43, 84, 108, 0.5);}
+.logo{float:left;width:25%;}
+.logo a{display:inline-block;margin:20px 0;}
+.logo a img{width:100%;}
+
+/*toggle start*/
+.menu-list { float:right;width:70%;text-align:right;}
+.list ul {  margin: 0;  padding: 0;  list-style: none;  }
+/* .list li a:hover,.header .menu-btn:hover {  background-color: #f4f4f4;} */
+.list .logo {  display: block;  float: left;  font-size: 2em;  padding: 10px 20px;  text-decoration: none;}
+/* menu */
+.list .menu {  clear: both;  max-height: 0;  transition: max-height .2s ease-out;}
+/* menu icon */
+.list .menu-icon {  cursor: pointer;  display: inline-block;  float: right;  padding: 28px 20px;  position: relative;  user-select: none;}
+.list .menu-icon .navicon {  background: #333;  display: block;  height: 2px;  position: relative;  transition: background .2s ease-out;  width: 18px;}
+.list .menu-icon .navicon:before,
+.list .menu-icon .navicon:after {  background: #333;  content: '';  display: block;  height: 100%;  position: absolute;  transition: all .2s ease-out;  width: 100%;}
+.list .menu-icon .navicon:before {  top: 5px;}
+.list .menu-icon .navicon:after {  top: -5px;}
+/* menu btn */
+.list .menu-btn {  display: none;}
+.list .menu-btn:checked ~ .menu {  max-height: 240px;}
+.list .menu-btn:checked ~ .menu-icon .navicon {  background: transparent;}
+.list .menu-btn:checked ~ .menu-icon .navicon:before {  transform: rotate(-45deg);}
+.list .menu-btn:checked ~ .menu-icon .navicon:after {  transform: rotate(45deg);}
+.list .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.list .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {  top: 0;}
+
+/* 48em = 768px */
+@media (min-width: 48em) {  .header li {    float: left;  } /* 
+ .list li a {    padding: 20px 30px;  } */
+ 
+  .list .menu {    clear: none;    float: right;    max-height: none;  } 
+  .list .menu-icon {    display: none;  }
+}
+/*toggle end*/
+
+/* .menu-list{float:right;width:70%;text-align:right;} */
+.list {width:100%;display:inline-block;padding:40px 0;}
+/* .list .menu{width:100%;display:inline-block;} */
+.list .menu li{position:relative;display:inline-block;margin-left:30px; }
+.list .menu li a{text-decoration:none;color:#d5dde2;font-size:20px;font-weight:600;line-height:24px;}
+.list .menu li a:hover{color:#000;}
+.list .menu li:hover .listeffect{display:block;}
+.list .menu li .listeffect{display:none;background:rgba(43, 84, 108, 0.5);position:absolute;width:150px;text-align:left;padding-left:20px;}
+.list .menu li .listeffect li{margin-left:0;padding:10px 0;display:block;}
+
+/*s
+
+.slideshow-container {  max-width: 1000px;  position: relative;  margin: auto;}
+.mySlides{text-align:center;margin-top: 50px;    margin-bottom: 80px;}
+/* Next & previous buttons */
+.prev, .next {  cursor: pointer;  position: absolute;  top: 50%;  width: auto; margin-top: -22px;  color: white;  font-weight: bold;  font-size: 18px;  transition: 0.6s ease;  border-radius: 0 3px 3px 0;  user-select: none;}
+
+/* Position the "next button" to the right */
+.next {  right: 20%;  border-radius: 3px 0 0 3px;}
+.prev {  left: 20%;  }
+
+.bannerheading{display:inline-block;width:50%;text-align:center;margin-top:70px;}
+.bannerheading h1{color:#fff;font-size:100px;line-height:112px;font-weight:600;text-shadow:-1px -2px 2px #000;}
+
+.prev, .next img {    display: inline-block;}
+/* Fading animation */
+.fade { text-align:center; -webkit-animation-name: fade;  -webkit-animation-duration: 1.5s;  animation-name: fade;  animation-duration: 1.5s;}
+
+@-webkit-keyframes fade {  from {opacity: .4}   to {opacity: 1}}
+
+@keyframes fade {  from {opacity: .4}   to {opacity: 1}}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {  .prev, .next,.text {font-size: 11px}}
+
+/* banner end*/lider 
+
+/* form area start*/
+.home-search{    position: relative;display:inline-block;width:100%;}
+.container{width:1300px;margin:0 auto;}
+.formheading{    position: absolute; bottom:-70%;    left: 0;    right: 0;display:inline-block;text-align:center;width:100%;}
+.formheading h2{background:#07333c;padding:10px 45px;color:#fff;font-size:36px;line-height:42px;font-weight:400;display:inline-block;box-shadow:-1px -1px 2px #000;}
+.form-field{display:inline-block;width:100%;background:rgba(44, 84, 109, 0.2);padding:30px}
+.firstformfield{float:left;width:31%;    margin-bottom: 35px;}
+.property{margin:0 43px;}
+#buy-rent-sell{display:inline-block;width:100%;border:none;background:#fff;padding:10px 10px;font-size:24px;line-height:26px;font-weight:400;color:#000;}
+#propertytype{display:inline-block;width:100%;border:none;background:#fff;padding:10px 10px;font-size:24px;line-height:26px;font-weight:400;color:#000;}
+#city{display:inline-block;width:100%;border:none;background:#fff;padding:10px 10px;font-size:24px;line-height:26px;font-weight:400;color:#000;}
+#state{display:inline-block;width:100%;border:none;background:#fff;padding:10px 10px;font-size:24px;line-height:26px;font-weight:400;color:#000;}
+#pricefrom{display:inline-block;width:100%;border:none;background:#fff;padding:10px 10px;font-size:24px;line-height:26px;font-weight:400;color:#000;}
+#priceto{display:inline-block;width:100%;border:none;background:#fff;padding:10px 10px;font-size:24px;line-height:26px;font-weight:400;color:#000;}
+.formanchor{display:inline-block;width:100%;text-align:center;margin-top:5px;}
+.formanchor a{text-decoration:none;background:#07333c;padding:15px 56px;color:#fff;font-size:24px;line-height:30px;font-weight:400;display:inline-block;border:none;}
+.formanchor a:hover{color:#82cbf9;}
+/* form area end*/
+
+
+
+
+/*who we are start*/
+.whoweare{display:inline-block;width:100%;background-image:url(../images/whowearebanner.jpg);background-repeat:no-repeat;background-position:center;background-size:cover;}
+.whoarea{display:inline-block;width:96%;background:rgba(7, 51, 60, 0.8);margin:35px 25px;text-align:center;padding:30px 0;}
+
+.commmonheading{display:inline-block;width:100%;text-align:center;}
+.commmonheading h3{font-size:60px;line-height:64px;color:#fff;font-weight:400;}
+.whodetails{display:inline-block;width:100%;text-align:center;}
+.whodetails p{font-size:24px;line-height:34px;color:#fff;font-weight:400;padding:20px 95px;}
+.whoreasons{display:inline-block;width:100%;    padding: 0 50px;}
+.firstwho{float:left;width:33%;text-align:center;}
+.growth{display:inline-block;width:18%;margin-bottom:10px;}
+.growth img{width:100%;}
+.firstwho span{display:inline-block;width:100%;font-size:24px;line-height:30px;font-weight:500;color:#fff;}
+
+/*who we are end*/
+
+/* property start*/
+.properties{display:inline-block;width:100%;margin:65px 0;}
+.propertiesdetails{display:inline-block;width:100%;}
+.ph h3{color:#000;}
+.propertyfield{display:inline-block;width:100%;margin-top:25px;}
+.firstpeoperty{float:left;width:32.4%;}
+.propertyimage{background-image:url(../images/property.jpg);background-position:center;background-repeat:no-repeat;background-size:cover;width:100%;min-height:250px;}
+.propertyimage span{background:#1f4158;font-size:30px;line-height:36px;color:#fff;font-weight:400;padding:7px 32px;    display: inline-block;}
+.accommodationdeatils{background:#d5dde2;display:inline-block;width:100%;padding:10px 5px 28px ;}
+.ratesandwish{padding:20px 15px;display:inline-block;width:100%;}
+.ratesandwish span{color:#000;font-size:30px;line-height:36px;font-weight:600;}
+.ratesandwish span i{color:#000;font-size:30px;line-height:36px;}
+.ratesandwish .wish{float:right;width:10%;}
+.ratesandwish .wish i{color:#1f4158;font-size:30px;line-height:36px;}
+.accommodation{display:inline-block;width:32%;text-align:center;margin-bottom:15px;}
+.accommodation i{color:#000;font-size:30px;line-height:36px;display:block;}
+.accommodation span{color:#000;font-size:18px;line-height:24px;font-weight:400;display:block;}
+.secondp{margin:0 18px;}
+/* property end*/
+
+/*testimonials start */
+.testimonials{display:inline-block;width:100%;}
+.testimonialsdetails{display:inline-block;width:100%;}
+.test h3{color:#000;}
+.tdetails{display:inline-block;width:100%;    margin-top: 30px;}
+.tleft{float:left;width:60%;text-align:center;}
+.tleft p{margin: 50px 0 25px;color:#000;font-size:24px;line-height:36px;font-weight:500;font-style:italic;    padding-right: 42px;}
+.tleft span{color:#000;font-size:24px;line-height:30px;font-weight:600;}
+.tright{float:right;width:40%;}
+.tright img{width:100%;}
+.tanchor{display:inline-block;width:100%;text-align:left;    margin-top: 67px}
+.tanchor a{text-decoration:none;font-size:30px;line-height:36px;font-weight:700;color:#000;}
+.tanchor a:hover{color:#82cbf9;}
+/*testimonials end */
+
+/* buyer and seller start*/
+.buyerseller{margin:60px 0;display:inline-block;width:100%;background-image:url(../images/buyerbanner.jpg);background-position:center;background-repeat:no-repeat;background-size:cover;min-height:240px;}
+.absdetails{display:inline-block;width:100%;    margin: 30px 0;}
+.abs span{font-size:30px;line-height:36px;font-weight:400;color:#fff;margin: 10px 0;    display: block;}
+.absmail{    margin: 10px 0;
+display:inline-block;width:100%;text-align:center;}
+input[type="email"] {   position:relative; border: none;    padding: 16px 0 16px 25px;    width: 55%;display: inline-block;color:#07333c;font-size:24px;line-height:28px;font-weight:400;}
+.absmail button{position:absolute;left: 60.7%;    width: 34.6%;text-decoration:none;background:#07333c;padding:15px 70px;color:#fff;font-size:24px;line-height:30px;font-weight:400;display:inline-block;border:none;}
+.absmail button:hover{color:#82cbf9;}
+/* buyer and seller end*/
+
+/* contact us start*/
+.contactus{display:inline-block;width:100%;text-align:center;}
+.contacth h3{color:#000;}
+.contactdetails{display:inline-block;width:100%;}
+.contactdetails p{color:#000;font-size:18px;line-height:28px;font-weight:400;    margin: 15px 0 10px;}
+.contactdetails span{color:#000;font-size:30px;line-height:38px;font-weight:500;margin-bottom:10px;display:inline-block;}
+.number {    text-align: left;    float: left;    width: 32%;font-family: 'Roboto';}
+/* contact us end*/
+
+/* footer start*/
+footer{display:inline-block;width:100%;    margin-top: 65px;}
+.upperfooter{float:left;width:100%;background:#07333c;padding: 35px 0 45px;}
+.footfirst{float:left;width:28%;text-align:left;}
+.footlogo{display:inline-block;width:80%;}
+.footlogo img{width:100%;}
+.footp{display:inline-block;width:100%;}
+.footp p{color:#fff;font-size:16px;line-height:22px;font-weight:400;margin:15px 0 25px;}
+.footmap{display:inline-block;width:100%;color:#fff;font-size:16px;line-height:22px;font-weight:400;}
+.footmap i{display:inline-block;color:#fff;font-size:16px;line-height:22px;    margin-right: 20px;}
+
+.footsecond{float:left;width:18%;    padding-left: 65px;}
+.footheading{display:inline-block;width:100%; }
+.footheading h4{display:inline-block;width:100%; font-size:32px;font-weight:600;line-height:42px;color:#fff;}
+.footul{display:inline-block;width:100%;}
+.footul ul{display:inline-block;width:100%;margin-top:5px;}
+.footul ul li{display:inline-block;width:100%;}
+.footul ul li i{color:#fff;font-size:24px;line-height:34px;margin-right:13px;}
+.footul ul li a{color:#fff;font-size:18px;line-height:28px;font-weight:400;text-decoration:none;}
+.footul ul li a:hover{color:#000;}
+
+.bottomfooter{float:left;width:100%; background:#000;padding:20px 0;}
+.copyright{float:left;width:20%;}
+.copyright small{color:#fff;font-size:14px;line-height:20px;font-weight:400;}
+.footsocial{float:right;text-align:right;width:50%;}
+.footsocial ul{display:inline-block;width:100%;}
+.footsocial ul li{display:inline-block;margin: 0 15px;}
+.footsocial ul li a{display:inline-block;text-decoration:none;}
+.footsocial ul li a i{color:#fff;font-size:28px;line-height:36px;}
+.footsocial ul li a img{display:inline-block;width:100%;}
+/* footer end*/
+
+@media screen and (max-width:1520px){
+	.box{width:100%;padding:0 30px;}
+	.container{width:100%;padding:0 30px;}
+	.bannerheading {    width: 58%;}
+	.firstformfield {    float: left;    width: 28%;}
+	.prev {    left: 16%;}
+	.next {    right: 16%;}
+	.formheading{bottom:-80%;}
+	
+	.firstpeoperty {    float: left;    width: 32%;}
+	.properties {    margin: 30px 0 ;}
+	.buyerseller { margin: 40px 0 ;}
+	.tleft p {    margin: 0px 0 15px;}
+	.tanchor{margin-top:40px;}
+	.absmail button {    left: 58.5%;}
+	input[type="email"] {    width: 62%;}
+	footer{margin-top:40px;}
+	.bottomfooter{padding:15px 0;}
+	.copyright {width:24%;}
+}
+
+@media screen and (max-width:1199px){
+	.banner{min-height:650px;}
+		.prev {padding:0 0 0 45px;    left: 12%;}
+	.next  {padding:0 45px 0 0;    right: 12%;}
+	.bannerheading {    width: 40%;}
+	.formheading h2{margin: 55px 0 0 0;}
+	.formheading {    bottom: -59%;}
+	.bannerheading h1{font-size:70px;line-height:100px;}
+	#buy-rent-sell{font-size:20px;}
+#propertytype{font-size:20px;}
+#city{font-size:20px;}
+#state{font-size:20px;}
+#pricefrom{font-size:20px;}
+#priceto{font-size:20px;}
+.commmonheading h3{font-size:50px;}
+.whodetails p{font-size:18px;line-height:24px;    padding: 15px 49px;}
+.firstwho span{font-size:18px;line-height:24px;}
+
+.propertyimage span{font-size:26px;line-height:32px;}
+.formanchor a {    padding: 13px 38px;}
+.tleft p {    font-size: 20px;line-height: 30px;}
+.tleft span {    font-size: 20px;line-height: 28px;}
+.tanchor {margin-top: 10px;}
+.tanchor a {font-size: 26px;line-height:30px;}
+
+.footsecond{    padding-left: 33px;}
+.footheading h4{font-size: 26px;line-height: 36px;}
+.footul ul li a {font-size: 16px;line-height: 22px;}
+.footul ul li i {    font-size: 20px;line-height: 30px;}
+.footp p {font-size:15px;}
+.footmap i{    margin-right: 10px;}
+.footmap{font-size:14px;}
+}
+
+@media screen and (max-width:991px){
+
+	.banner{min-height:550px;}
+		.prev{padding: 0 ;}
+		.next{padding: 0  ;}
+		.prev img{width: 65%;}
+		.next img{width: 65%;}
+		.bannerheading {		width: 50%;}
+		.list .menu li{margin-left:15px;}
+		i.fa.fa-chevron-down {		font-size: 16px;}
+		.list .menu{width:100%;display:inline-block;}
+	.bannerheading h1 {    font-size: 58px;    line-height: 70px;}
+	.menu-list nav ul li{margin-left: 20px;}
+	.menu-list nav ul li a{font-size: 17px;}
+	.whoarea{    margin: 20px 10px;    padding: 20px 0;}
+	.Hcontact span{font-size: 15px;}
+	.hlogin i{    font-size: 24px;    line-height: 35px;}
+	.hcontact i{    font-size: 24px;    line-height: 35px;}
+	.hlogin a{    font-size: 18px;}
+	.hcontact .hphone{    font-size: 18px;}
+	#buy-rent-sell{font-size:15px;}
+#propertytype{font-size:15px;}
+#city{font-size:15px;}
+#state{font-size:15px;}
+#pricefrom{font-size:15px;}
+#priceto{font-size:15px;}
+	.firstpeoperty {    float: left;    width: 32%;}
+	.formheading {  bottom:-36%;}
+	.formheading h2 {   padding: 8px 39px; font-size: 26px;line-height: 36px;}
+	.formanchor a {    font-size: 18px;    line-height: 28px;    padding: 6px 16px;}
+	.accommodation i{font-size: 22px;    line-height: 28px;}
+	.propertyimage span {    font-size: 20px;    line-height: 28px;}
+	.accommodation span{font-size: 14px;    line-height: 22px;}
+	.ratesandwish span i {font-size: 21px;    line-height: 26px;}
+	.ratesandwish .wish i { font-size: 26px;    line-height: 30px;}
+	.ratesandwish span {font-size: 20px;    line-height: 26px;}
+	.tanchor a {    font-size: 20px;}
+	.ratesandwish{    padding: 8px 15px;}
+	.propertyimage{    min-height: 170px;}
+	.accommodationdeatils{    padding: 10px 5px 20px;}
+	.secondp {    margin: 0 11px;}
+	.tleft span {    font-size: 16px;    line-height: 22px;}
+	.tleft p {  padding-right: 18px;  font-size: 15px;line-height:22px;}
+	.abs span {    margin: 5px 0;}
+	.absmail button{    width: 35.6%; left: 60%;padding: 9px 70px;}
+	input[type="email"] {font-size:20px; width:88%;   padding: 10px 0 10px 25px;}
+	.commmonheading h3 {    font-size: 40px;}
+	.footlogo {   width: 30%;}
+	.footsecond {margin-top:20px;width: 25%;}
+	.footfirst { width: 100%;    text-align: center;}
+	.copyright {    width: 39%;}
+	.footsocial ul li {    margin: 0 10px;}
+	.footp p{margin: 10px 0 10px;}
+	
+}
+
+@media screen and (max-width:767px){
+	.logo{display:inline-block;    width: 100%;    text-align: center;}
+	.menu-list{width:100%;}
+	.list{padding:0;}
+	.list .menu{overflow:hidden;}
+	.logo a img {width:67%;}
+	.list .menu li {    width: 100%;    padding: 5px 50px;}
+	.list .menu li .listeffect{right: 30%;    top: 95%;    width: 140px;    min-height: 200px;}
+	.logo a {   margin: 20px 0 10px;}
+	
+	.banner{min-height: 400px;}
+	a.prev {    padding: 0 ;}
+	.next {    padding: 0 ;right:6%;}
+	.prev img{width:60%;}
+	.next img{width:60%;}
+	.bannerheading{margin-top:0;}
+	.bannerheading h1 {    font-size: 35px;    line-height: 60px;}
+	.headerdetails{margin:0 0 5px;}
+	.Hcontact {    text-align: center; width: 100%;}
+	.hlogin {margin:5px 0;text-align: center; width: 100%;}
+	.hlogin i {    font-size: 20px;    line-height: 30px;	}
+	.hcontact  i {    font-size: 20px;    line-height: 30px;	}
+	.hlogin a {    font-size: 16px;}
+	.hcontact .hphone{font-size: 16px;}
+	.hcontact {    text-align: center; width: 100%;}
+	.formheading h2{padding: 8px 11px;font-size: 20px;line-height: 32px;}
+	.formheading {    bottom: 30.6%;}
+.form-field{    padding: 15px;}
+.firstformfield { width: 100%;}
+.property, .firstformfield{margin:10px 0;}
+.formanchor a {    font-size: 16px;    line-height: 26px;padding: 4px 14px;}
+.commmonheading h3 {font-weight: 600;line-height:32px;font-size: 19px;}
+.whoarea{    margin: 20px 5px;    padding: 20px 0;}
+.whodetails p {    font-size: 15px;    line-height: 22px;padding: 15px 5px;}
+.whoreasons{    padding: 0 10px;}
+.firstwho span {    font-size: 15px;line-height: 21px;}
+.propertyfield{margin-top:15px;}
+.firstpeoperty{float:left;width:100%;}
+.secondp{margin:20px 0;}
+.tleft{width:100%;}
+.tleft p{padding-right:0;}
+.tleft span {    font-size: 20px;line-height: 26px;}
+.tanchor a {     display: block;   font-size: 22px;text-align: center;}
+.tright {    float: right;    width: 100%;margin-top: 20px;}
+.abs span {    font-size: 18px;line-height: 26px;}
+input[type="email"] {width: 80%;padding: 10px 10px 10px 25px;position:unset;}
+.absmail button{    padding: 9px 30px;width: 45.6%; margin-top: 15px;font-size:20px;position:unset;}
+.contactdetails p {font-size: 15px;line-height: 22px;}
+.contactdetails span {  font-size: 20px;line-height: 28px;}
+.contactdetails span {    font-size: 22px;line-height: 23px;}
+.number{width:100%;text-align:center;}
+.footlogo {width: 50%;}
+.footp p{margin-top:20px;}
+.footsecond {width:50%;padding-left: 33px;}
+.bottomfooter {position: relative;    padding: 10px 0 20px;}
+.copyright {width:100%;text-align:center;    top: 78%;    left: 0%;position: absolute;}
+.footsocial{width:100%;margin-bottom:10px;}
+.upperfooter{    padding: 30px 0 20px;}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
